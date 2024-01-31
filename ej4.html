@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Estilos comunes para todas las pantallas */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos para pantallas md, lg y xl */
+        @media (min-width: 768px) {
+            header {
+                background-color: green;
+            }
+
+            .content-container {
+                background-color: red;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .content1 {
+                order: 1; /* Contenido1-izquierda */
+            }
+
+            .content2 {
+                order: 2; /* Contenido2-centro */
+            }
+
+            .content3 {
+                order: 3; /* Contenido3-derecha */
+            }
+
+            .footer-container {
+                background-color: yellow;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .footer1 {
+                order: 1; /* Footer1-izquierda */
+            }
+
+            .footer2 {
+                order: 2; /* Footer2-derecha */
+            }
+        }
+
+        /* Estilos para pantallas sm */
+        @media (max-width: 767px) {
+            header {
+                background-color: lightblue;
+            }
+
+            .content-container {
+                background-color: red;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .content1,
+            .content2 {
+                order: initial; /* Restaurar orden predeterminado */
+            }
+
+            .content3 {
+                order: 3; /* Contenido3-derecha */
+                background-color: green; /* Contenido3 en verde */
+            }
+
+            .footer-container {
+                background-color: yellow;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .footer1,
+            .footer2 {
+                order: initial; /* Restaurar orden predeterminado */
+            }
+        }
+
+        /* Estilos para pantallas xs */
+        @media (max-width: 575px) {
+            header {
+                background-color: pink;
+            }
+
+            .content-container,
+            .footer-container {
+                background-color: red;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .content2 {
+                background-color: lightblue;
+            }
+
+            .footer1,
+            .footer2 {
+                order: initial; /* Restaurar orden predeterminado */
+            }
+        }
+    </style>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+            /* Estilos comunes */
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            /* Estilos para pantallas md, lg y xl */
+            @media (min-width: 768px) {
+                header {
+                    background-color: green;
+                }
+
+                .content-container {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .content1 {
+                    background-color: red;
+                }
+
+                .content2 {
+                    background-color: red;
+                    text-align: center;
+                }
+
+                .content3 {
+                    background-color: red;
+                }
+
+                .footer-container {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .footer1 {
+                    background-color: yellow;
+                }
+
+                .footer2 {
+                    background-color: yellow;
+                }
+            }
+
+            /* Estilos para pantallas sm */
+            @media (max-width: 767px) {
+                header {
+                    background-color: lightblue;
+                }
+
+                .content-container {
+                    flex-direction: column;
+                }
+
+                .content1 {
+                    background-color: red;
+                }
+
+                .content2 {
+                    background-color: red;
+                    text-align: right;
+                }
+
+                .content3 {
+                    background-color: green;
+                }
+
+                .footer-container {
+                    flex-direction: column;
+                }
+
+                .footer1 {
+                    background-color: yellow;
+                }
+
+                .footer2 {
+                    background-color: yellow;
+                }
+            }
+
+            /* Estilos para pantallas xs */
+            @media (max-width: 575px) {
+                header {
+                    background-color: pink;
+                }
+
+                .content-container,
+                .footer-container {
+                    flex-direction: column;
+                }
+
+                .content1,
+                .content2,
+                .content3 {
+                    background-color: red;
+                }
+
+                .content2 {
+                    background-color: lightblue;
+                }
+
+                .footer1 {
+                    background-color: yellow;
+                }
+
+                .footer2 {
+                    background-color: yellow;
+                }
+            }
+        </style>
+        <title></title>
+    </head>
+    <body>
+
+    <header class="text-center py-3">
+        <h1>Header</h1>
+    </header>
+
+    <div class="content-container">
+        <div class="content1 p-3">
+            <p>Contenido1</p>
+        </div>
+        <div class="content2 p-3">
+            <p>Contenido2</p>
+        </div>
+        <div class="content3 p-3">
+            <p>Contenido3</p>
+        </div>
+    </div>
+
+    <div class="footer-container">
+        <div class="footer1 p-3">
+            <p>Footer1</p>
+        </div>
+        <div class="footer2 p-3">
+            <p>Footer2</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    </html>
+
+
+    <!-- Bootstrap JS y Popper.js (opcional) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title></title>
+</head>
+</html>
