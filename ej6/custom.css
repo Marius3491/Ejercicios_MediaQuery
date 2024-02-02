@@ -1,0 +1,56 @@
+/* Estilos personalizados para mejorar la apariencia y hacer responsivo */
+
+/* Alineación del logotipo en la barra de navegación */
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+/* Ajustes de la barra de navegación para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        margin-right: 0;
+    }
+    .navbar-toggler {
+        margin-right: 15px;
+    }
+}
+
+/* Estilos para el botón "Ver Recetas" en la página principal */
+.carousel-caption .btn {
+    margin-top: 20px;
+}
+
+/* Estilos para las tarjetas de recetas destacadas en la página principal */
+.card-deck .card {
+    margin-bottom: 20px;
+}
+
+/* Estilos para las imágenes en las tarjetas de recetas destacadas */
+.card-deck .card img {
+    border: 1px solid #ddd; /* Borde sutil */
+    border-radius: 8px; /* Esquinas redondeadas */
+    max-width: 100%; /* Hacer que las imágenes se ajusten al contenedor */
+    height: auto; /* Ajustar la altura automáticamente */
+}
+
+/* Cambiar la fuente del título de la página y textos principales */
+h1, h2, p {
+    font-family: 'Lobster', cursive; /* Usar la fuente 'Lobster' para los títulos y 'Roboto' para el texto principal */
+}
+
+/* Cambiar la fuente del menú de navegación */
+.navbar-nav .nav-link {
+    font-family: 'Montserrat', sans-serif; /* Usar la fuente 'Montserrat' para el menú de navegación */
+}
+
+/* Ajustes para hacer más espaciado en dispositivos pequeños */
+@media (max-width: 576px) {
+    .form-group {
+        margin-bottom: 15px;
+    }
+}
+
+/* Estilos para hacer la tabla más legible en dispositivos pequeños */
+.table-responsive {
+    margin-bottom: 20px;
+}
