@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Detalle de la Página</title>
     <style>
         body {
@@ -27,7 +27,12 @@
 </nav>
 
 <div class="container mt-4">
-    <!-- Tu contenido aquí -->
+    <h2 class="text-center">Detalle de la Página</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida enim vitae nunc aliquam, sit amet fringilla sem posuere.</p>
+    <p>Curabitur nec fermentum libero. Duis vel tristique lacus, sit amet laoreet est. Donec eleifend ligula sit amet quam tempus, in iaculis purus semper.</p>
+
+    <!-- Agregamos las clases mx-auto y d-block para centrar la imagen -->
+    <img src="detalle-imagen.jpg" class="img-fluid mx-auto d-block" alt="Imagen de Detalle">
 
     <div class="row mt-3">
         <div class="col">
@@ -49,12 +54,12 @@
     </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>
-    $(document).ready(function(){
-        $('body').addClass('show');
+    document.addEventListener('DOMContentLoaded', function() {
+        document.body.classList.add('show');
     });
 </script>
 </body>
